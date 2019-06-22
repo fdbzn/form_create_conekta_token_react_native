@@ -2,9 +2,8 @@ const BASE_API = 'http://45.55.25.108:1337/';
 
 class Api {
   
-  
-  add_card( token ) {
-    return this.post(`${BASE_API}test/react_pay`, token);
+  add_card( token, url ) {
+    return this.post(url, token);
   }
   
 
