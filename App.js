@@ -6,9 +6,9 @@ import Api from './api';
 type Props = {};
 export default class App extends Component<Props> {
   state = {
-    url:'http://45.55.25.108:1337/test/react_pay',
+    url:'{path_to_your_endpoint}',
     cardNumber: '4242424242424242',
-    name: 'desde react native',
+    name: 'Daniel Bazan',
     cvc: '111',
     expMonth: '11',
     expYear: '21'
@@ -19,7 +19,7 @@ export default class App extends Component<Props> {
     var conektaApi = new Conekta();
     let self = this;
 
-    conektaApi.setPublicKey('key_Pvuz4pSLJ5LyaBBRNUzZdjg');
+    conektaApi.setPublicKey('{your_public_key}');
 
     conektaApi.createToken(
       {
